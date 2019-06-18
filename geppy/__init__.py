@@ -53,13 +53,13 @@ def _print_module_not_found(module_name, f_name, http=''):
 
 try:
     import graphviz
-    from geppy.support.visualization import export_expression_tree
+    from .support.visualization import export_expression_tree
 except ImportError:
     _print_module_not_found('graphviz', 'geepy.export_expression_tree', 'https://pypi.org/project/graphviz/')
 
 try:
     import sympy
-    from geppy.support.simplification import simplify
+    from .support.simplification import simplify
 except ImportError:
     _print_module_not_found('sympy', 'geepy.simplify', 'http://www.sympy.org/')
 
